@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitVerse - Add Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">LitVerse</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+    
+    <div class="review-container">
+        <div class="review-form-box">
+            <h2>Add New Book Review</h2>
+            <form class="review-form">
+                <input type="text" placeholder="Book Title" required>
+                <input type="text" placeholder="Author" required>
+                <select required>
+                    <option value="">Select Genre</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="romance">Romance</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <input type="number" min="1" max="5" placeholder="Rating (1-5)" required>
+                <textarea placeholder="Write your review..." required></textarea>
+                <button type="submit" onclick="window.location.href='index.html'">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
